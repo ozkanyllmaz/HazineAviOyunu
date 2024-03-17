@@ -6,6 +6,7 @@ import java.awt.event.ActionListener;
 public class HazineAvi {
 
     public static void main(String[] args) {
+        // deneme
 
 
         JFrame frame = new JFrame("First Frame");
