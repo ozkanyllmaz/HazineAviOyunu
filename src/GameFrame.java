@@ -3,8 +3,8 @@ import java.awt.*;
 
 public class GameFrame extends JFrame {
     public JLabel label;
-    int row = 30;
-    int col = 30;
+    int row = 50;
+    int col = 50;
 
     public GameFrame() {
         setLayout(new GridLayout(row, col));
