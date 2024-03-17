@@ -1,12 +1,20 @@
 import javax.swing.*;
 import java.awt.*;
+import java.util.Scanner;
 
 public class GameFrame extends JFrame {
     public JLabel label;
-    int row = 50;
-    int col = 50;
+
+    Scanner scan = new Scanner(System.in);
+    int col,row;
+
 
     public GameFrame() {
+        System.out.println("Row: ");
+        row = scan.nextInt();
+        System.out.println("Col: ");
+        col = scan.nextInt();
+
         setLayout(new GridLayout(row, col));
         setDefaultCloseOperation(EXIT_ON_CLOSE);
 

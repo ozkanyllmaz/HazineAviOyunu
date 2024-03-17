@@ -5,11 +5,13 @@ import java.util.Random;
 import static java.lang.Math.abs;
 
 public class HaraketsizEngeller extends Engel {
-    static int row = 50;
-    static int col = 50;
+
     static GameFrame frame = new GameFrame(); // GameFrame nesnesi oluşturuyoruz
+    static int row = frame.row;
+    static int col = frame.row;
 
     public static void duvar() {
+
         Random random = new Random();
         ImageIcon icon = new ImageIcon("C:/Users/22020/OneDrive/Masaüstü/proje/HazineAviOyunu/src/source/Duvar.png");
 
@@ -129,8 +131,8 @@ public class HaraketsizEngeller extends Engel {
 
         // Rastgele bir başlangıç noktası seç
 
-        int randRow = random.nextInt(15, row - 15); // 15 satır boyunca kare çizebilmek için
-        int randCol = random.nextInt(15, col - 15); // 15 sütun boyunca kare çizebilmek için
+        int randRow = random.nextInt(row - 15); // 15 satır boyunca kare çizebilmek için
+        int randCol = random.nextInt(col - 15); // 15 sütun boyunca kare çizebilmek için
 
 
         // 15x15 kare çiz
